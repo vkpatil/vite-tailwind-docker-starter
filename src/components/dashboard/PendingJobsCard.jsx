@@ -3,11 +3,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Clock } from 'lucide-react';
 import Card from '../ui/Card';
-import { getStatusColorClasses } from '../../utils/formatters';
+import { getStatusColorClasses } from '../utils/formatters';
+import { formatTime, formatDuration } from '../utils/formatters';
 
-/**
- * Component for displaying database pending jobs
- */
 const PendingJobsCard = ({ 
   jobs, 
   isLoading, 
